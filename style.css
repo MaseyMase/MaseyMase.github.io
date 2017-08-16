@@ -1,0 +1,276 @@
+
+
+*{
+    text-shadow: 2px 2px 5px #0B032C;
+    font-family: 'Lato', sans-serif;
+    margin-top: -5px;
+}
+
+
+header {
+    background: url(img/aaron-baw-120047.jpg);
+    background-size: cover;
+    width: auto;
+    height: 100%;
+    padding-bottom: 650px;
+    color: #FFF;
+    text-decoration: none;
+    margin-top: -25px;
+}
+
+
+#Welcome_Hello {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    font-size: 6.5em;
+
+}
+
+#Welcome_Hello h1 {
+    font-size: 2em;
+}
+
+#Welcome_Hello h3 {
+    font-size: 3.5rem;
+}
+
+header ul {
+    list-style-type: none;
+
+}
+
+
+header a {
+    color: #fff;
+    font-size: 100px;
+    transition: 2s ease;
+}
+
+header a:hover {
+    color: #0B032C;
+    background-color: white;
+    border-radius: 25px;
+}
+header p {
+    text-decoration: underline;
+    padding-top: 100px;
+
+}
+
+.block {
+    font-size: 5rem;
+}
+
+.block_p {
+    background-color: #0B032C;
+    color: white;
+
+}
+
+form {
+    clear: both;
+    width: 50%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    margin: auto;
+    background-color: #0B032C;
+    margin-top: 250px;
+    margin-bottom: -250px;
+    color: white;
+    font-size: 1.5rem;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(11,3,44,0.74);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(11,3,44,0.74);
+    box-shadow: 10px 10px 5px 0px rgba(11,3,44,0.74);
+}
+
+footer {
+    clear: both;
+    background-color: #0B032C;
+    color: white;
+    text-align: center;
+    margin-top: 445px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer p {
+    font-size: 1.6em;
+    text-align: center
+}
+
+footer i {
+  font-size: 1.6rem;
+}
+
+#down_nav {
+  list-style: none;
+  background-color:#0B032C ;
+}
+
+#down_nav li {
+  text-align: center;
+}
+
+#down_nav li a {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  margin-top: none;
+  padding-top: -50px;
+  padding-bottom: -50px;
+  border: 3px solid white;
+}
+
+
+
+@media (max-width: 1540px) {
+    header
+   {
+    width: auto;
+    height: 100%;
+    font-size: 70%;
+  }
+  header ul {
+      margin-top: -200px;
+  }
+  header p {
+      font-size: 2em;
+      margin-top: 20px;
+  }
+  header h1 {
+      margin-top: -200px;
+  }
+  header h3 {
+      margin-bottom: 150px;
+  }
+  .block_p {
+      font-size: 0.8em;
+      height: auto;
+  }
+}
+
+@media only screen and (max-width: 1332px) and (min-width: 867px) {
+    .block_p {
+        height: 150px;
+        line-height: 75px;
+    }
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #0B032C; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    border-color: 2px solid white;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFF;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.butopen {
+  position: fixed;
+  margin-top: 20px;
+
+}
+
+#particles-js {
+    background: #0B032C;
+    height: 800px;
+    width: 100%;
+    z-index: -1;
+    margin-top: -15px;
+}
+
+#particles-js h1, #particles-js hr, #particles-js h6 {
+    z-index: 1;
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 8rem;
+}
+
+#particles-js h6 {
+    z-index: 1;
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 6rem;
+}
+
+.about_text {
+text-align: center;
+color: #;
+padding-top: 200px;
+
+}
+
+.about_text h1{
+    font-size: 8rem;
+    color: #0B032C;
+
+}
+
+.about_me {
+    margin: auto;
+    text-align: center;
+    max-width: 400px;
+    color: #0B032C;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: -250px;
+}
+
+.about_me img {
+    padding-bottom: -400px;
+}
+
+.buttonopen {
+    z-index: 1000;
+}

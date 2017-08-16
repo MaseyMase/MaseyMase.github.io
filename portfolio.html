@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<htmL>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+        <title>Landing Page Mase</title>
+    </head>
+    <body>
+<section>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home/Contact</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+  </div>
+
+  <span onclick="openNav()">
+    <button type="button" class="btn btn-primary butopen">Open Menu</button>
+  </span>
+
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+    <!-- Use any element to open the sidenav -->
+
+
+
+            <header>
+                <div id="Welcome_Hello">
+                    <h1 class="text-center hello">Hello I'm Mase</h1>
+                    <h3 class="text-center">Welcome to my Contact Page</h3>
+                </div>
+
+                    <div class="container">
+                        <div class="row">
+                        <ul class="text-center">
+                            <li class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                 <a href="https://github.com/MaseyMase"><i class="fa fa-github" aria-hidden="true"></i></a>
+                             </li>
+                            <li class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                <a href="https://www.linkedin.com/in/mase-fayazi-b21857129/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                <a href="https://codepen.io/MaseyMase/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                <a href="https://www.facebook.com/masyousd.fayazi?ref=bookmarks"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+
+                        <p class="text-center">You can find me on one of these links above                    <i class="fa fa-arrow-up text-center" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="block">
+                <p class="block_p col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">I Love to Code!<i class="fa fa-code" aria-hidden="true"></i>
+                </p>
+
+                <p class="block_p col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">Frond-end Developer <i class="fa fa-html5" aria-hidden="true"></i>
+
+                </p>
+                <p class="block_p col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">Looking for work <i class="fa fa-briefcase" aria-hidden="true"></i>
+
+                </p>
+            </div>
+
+    </section>
+        <form class="form-horizontal" role="form" method="post" action="index.php">
+                <h1>Wanna meet up? Drink some coffee perhaps?</h1>
+                <h4>Send me an email below. Love to meet you.</h4>
+                <div class="form-group">
+                		<label for="name">Name</label>
+                			<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+                		</div>
+                <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+                <div class="form-group ">
+                         <label for="exampleInputText">Your Message</label>
+                        <textarea  class="form-control" placeholder="Description"></textarea>
+                       </div>
+                       <button type="submit" class="btn btn-default">Send Message</button>
+                     </form>
+
+
+
+                     <footer>
+                         <p>If the links above aren't enough you can find me on the links below</p>
+                         <p class="text-center"><i class="fa fa-arrow-down" aria-hidden="true"></i></p>
+                         <p><i class="fa fa-mobile" aria-hidden="true"></i> : 0686154230</p>
+                         <p><i class="fa fa-envelope-o" aria-hidden="true"> : masyousd@gmail.com</i>
+                           <h1>This is where I am at!</h1>
+                           <div id="map"></div>
+
+
+                     </footer>
+           </div>
+
+
+
+         </body>
+
+         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAprW5pCUxp_kmoNA8kcIwmC8DkWmV2RZY&callback=initMap"
+               async defer></script>
+
+
+             <script>
+             /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+             function openNav() {
+                 document.getElementById("mySidenav").style.width = "250px";
+                 document.getElementById("main").style.marginLeft = "250px";
+             }
+
+             /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+             function closeNav() {
+                 document.getElementById("mySidenav").style.width = "0";
+                 document.getElementById("main").style.marginLeft = "0";
+             }
+
+             function initMap(){
+               //map options
+               var options = {
+                 zoom:9,
+                 center:{lat:52.37783, lng:4.87995}
+               }
+               //new map
+               var map = new google.maps.Map(document.getElementById('map'), options);
+
+
+               //add marker
+               var marker = new google.maps.Marker({
+                 position:{lat:52.37783, lng:4.87995},
+                 map:map,
+                 icon: {
+                     url: "https://image.flaticon.com/icons/png/512/157/157776.png",
+                     scaledSize: new google.maps.Size(32, 32) // pixels
+                 }
+
+               });
+
+               var infoWindow = new google.maps.infoWindow({
+                 content: '<h1>MaseyMase</h1>'
+               });
+
+               marker.addListener('click', function() {
+                 infoWindow.open(map, marker);
+               });
+             }
+             </script>
+
+             </html>
